@@ -1,0 +1,16 @@
+<h2>Edit a post</h2>
+
+<%= form_with(model: @post, local: true) do |f| %>
+  
+
+  <p>
+     <%= f.label :name %></br>
+     <%= f.text_field :name %>
+  </p>
+  
+  <p>
+    <%= f.submit %>
+  </p>
+
+
+<% end %>

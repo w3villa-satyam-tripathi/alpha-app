@@ -1,0 +1,19 @@
+<h2>create a new post</h2>
+
+<%= form_with scope: :post, url: posts_path, local: true do |f| %>
+  
+
+  <p>
+     <%= f.label :name %></br>
+     <%= f.text_field :name %>
+  </p>
+  <%= f.hidden_field :article_id ,value: params[:article_id] %>
+  
+  <p>
+    <%= f.submit %>
+  </p>
+  
+
+
+
+<% end %>
